@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/game/logo-games.ico" type="image/x-icon">
+   
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+       
+       <!--font-->
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+   
+       <!-- Icon Bootstrap-->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   
+       <!--Style CSS-->
+       <link rel ="stylesheet" href="css/game/style.css">
+   
+   
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <!--header-->
+    <div class="container-fluid d-inline-flex p-2">
+        <div class="row justify-content-start">
+            <div class="col-lg-12">
+                <!--back button-->
+                <a href="/">
+                    <img src="/assets/game/back.png" class="img-fluid rounded back-img p-2" alt="">
+                </a>
+
+                <!--game logo-->
+                <img src="/assets/game/logo.svg" class="img-fluid rounded game-logo p-2" alt="">
+
+                <!--title game-->
+                <span class="title-game"> rock paper scissors </span>
+            </div>
+        </div>
+    </div>
+
+    <!--game section-->
+    <div class="container-fluid text-center mt-3">
+        <div class="row justify-content-center">
+            <!--player section-->
+            <div class="col-lg-5" style="margin-left: 100px;" >
+                <!--player 1-->
+                <span class="player"> player 1 </span>
+                <br>
+                <!-- player choices -->
+                <!--rock-->
+                <button type="button" class="btn shadow-none choice-player mt-4" id="playerRock" data-player="rock">
+                    <img src="/assets/game/batu.png" width="100" class="img-fluid rounded" alt="">
+                </button>
+                <br>
+                <!--paper-->
+                <button type="button" class="btn shadow-none choice-player" id="playerPaper" data-player="paper">
+                    <img src="/assets/game/kertas.png" width="100" class="img-fluid rounded" alt="">
+                </button>
+                <br>
+                <!--scissors-->
+                <button type="button" class="btn shadow-none choice-player" id="playerScissors" data-player="scissors">
+                    <img src="/assets/game/gunting.png" width="100" class="img-fluid rounded" alt="">
+                </button>
+            </div>
+
+            <!--result section-->
+            <div class="col-lg-2 result-section container-fluid" style="margin: 0 -110px -50px -100px;" id="bgResult"  >
+                <span class="final-result text-center" id="finalResult" > VS </span>
+            </div>
+    
+            <!--com section-->
+            <div class="col-lg-5">
+                <!--com-->
+                <span class="player"> com </span>
+                <br>
+                <button type="button" class="btn choice-player mt-4" id="comRock" disabled>
+                    <img src="/assets/game/batu.png" width="100" class="img-fluid rounded" alt="">
+                </button>
+                <br>
+                <!--paper-->
+                <button type="button" class="btn choice-player" id="comPaper" disabled>
+                    <img src="/assets/game/kertas.png" width="100" class="img-fluid rounded" alt="">
+                </button>
+                <br>
+                <!--scissors-->
+                <button type="button" class="btn choice-player" id="comScissors" disabled>
+                    <img src="/assets/game/gunting.png" width="100" class="img-fluid rounded" alt="">
+                </button>
+            </div>
+        </div>  
+        <!--refresh-->
+    <div class="container-fluid refresh">
+        <button type="reset" class="btn shadow-none btn-custom text-center pt-2" style="margin: 0 -195px -10px -100px;" id="refreshButton">
+            <img src="/assets/game/refresh.png" width="60" class="img-fluid rounded" alt="">
+        </button>
+    </div>
+   
+</div>
+
+
+
+
+<!--javascript-->
+<script src="js/app.js" defer></script>
+
+<!--Bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>

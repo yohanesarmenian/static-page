@@ -1,0 +1,127 @@
+body {
+    background-color: #9C835F;
+}
+
+/* Header Section */
+
+.back-img{
+    height: 7vh;
+    width: auto;
+}
+
+.game-logo{
+    height: 11vh;
+    width: auto;    
+}
+
+.title-game{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vh;
+    margin-top: 2rem;
+    line-height: 49px;
+    text-transform: uppercase;
+
+    color: #F9B23D;
+}
+
+/* players */
+.player{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 2.5vw;
+}
+
+/* game section */
+/* result section */
+.result-section{
+    position: relative;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18vh;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 -10vh -5vh -10vh; */
+   color: #BD0000;
+}
+
+.result-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.bg-result{
+    /* position: relative; */
+    /* color: white;
+    font-size: 1vw; */
+    height: 10vw;
+    width: 15vw;
+    transform: rotate(-28.87deg);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #4C9654;
+    z-index: -1;
+    margin: 0 -10vh -5vh -10vh;
+    top: 22vh;
+}
+
+.draw{
+    /* position: relative;
+    color: white;
+    font-size: 1vw; */
+    height: 10vw;
+    width: 15vw;
+    transform: rotate(-28.87deg);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #035B0C;
+    z-index: -1;
+}
+
+.active{
+    background-color: #C4C4C4;
+    border-radius: 2rem;
+}
+
+/* player general section */
+.choice-player{
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: 100ms;  
+}
+
+.choice-player:hover{
+    transform: scale(1.2) rotate(15deg);
+    border-radius: 1rem;
+}
+
+/* refresh button */
+.btn-custom{
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.btn-custom:hover{
+    transform: scale(1.2) rotate(180deg);
+}
