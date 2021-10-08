@@ -9,7 +9,7 @@ in this project i add some features
 
 you can't play the game if isLogin = false, so you must register to play it
 
-Features in progress:
+# Features in progress:
 - send alerts if the email (username) is registered during registration, alert if the password is wrong when logging in
 
 - logout
@@ -17,7 +17,7 @@ Features in progress:
 - cosmetics
 
 
-How To Run
+# How To Run
 
 1. clone this repo
 2. npm 1
