@@ -20,5 +20,5 @@ you can't play the game if isLogin = false, so you must register to play it
 # How To Run
 
 1. clone this repo
-2. npm 1
-3. npm start
+2. ```npm i```
+3. ```npm start```
